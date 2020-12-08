@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Float Demo</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Float Demo</h1>
+        <h3>The example boxes have been given a border to more easily see the outline of the containing div. The containing div houses an image and text.</h3>
+        <h4>Box one has a blue border</h4>
+        <h4>Box two has a red border</h4>
+        <h4>Box three has a green border</h4>
+        <h4>Box four has a black border</h4>
+        <div class="container-one container">
+            <img src="blue_orange.jpeg" class="first-image image">
+            <div class="text">
+                This box has the image floated left. Floated elements don't force the containing element 
+                to resize to accommodate them. For example, if the only thing in this element was the floated 
+                element, then the containing element would reduce in height to nothing, hence why the border of the 
+                containing element is currently only containing the text.
+            </div>
+        </div>
+        <div class="container-two container">
+            <img src="blue_orange.jpeg" class="second-image image">
+            <div class="text">
+                In this box the image is floated to the right, but because the float is still active from box one, the 
+                image in box one has overflowed into it.
+                <br /><br />
+                In order to fix this any preceding floats need to be cleared.
+            </div>
+        </div>
+        <div class="container-three container">
+            <img src="blue_orange.jpeg" class="third-image image">
+            <div class="text">
+                Here the image is floated to the left, and the preceding floats have been cleared so the above elements 
+                don't spill over into this one. However, the image still spills out of the bottom of the image when sized 
+                accordingly. This can be fixed by setting the overflow property.
+            </div>
+        </div>
+        <div class="container-four container">
+            <img src="blue_orange.jpeg" class="fourth-image image">
+            <div class="text">
+                This box has the image floated right. It also has all the previous floats (left and right) cleared, so the 
+                floats set above don't overflow into it, and the overflow property set so that none of the floated elements 
+                in the containing element spill out beyond its borders.
+            </div>
+        </div>
+    </body>
+</html>
