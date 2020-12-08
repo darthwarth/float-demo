@@ -43,8 +43,11 @@
             <img src="blue_orange.jpeg" class="fourth-image image">
             <div class="text">
                 This box has the image floated right. It also has all the previous floats (left and right) cleared, so the 
-                floats set above don't overflow into it, and it has its overflow property set so that none of the floated elements 
+                floats set above don't overflow into it, and it has its display property set so that none of the floated elements 
                 in the containing element spill out beyond its borders.
+                <br /><br />
+                <i>display: flow-root;</i> is favoured over the more previously commonly used <i>overflow: auto;</i> due to some cases where 
+                certain side-effects were caused by overflow.
             </div>
         </div>
     </body>
